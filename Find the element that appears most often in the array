@@ -26,4 +26,4 @@ for i in range(0, n - 1 + 1, 1):
 print("Element that repeats the most times is " + maxt)
 print("The number of repetitions is " + max)
 
-![Screenshot 2024-07-29 215347](https://github.com/user-attachments/assets/1b85f5e5-76b4-48d7-a4fb-780b6712ad3a)
+< image ![Screenshot 2024-07-29 215347](https://github.com/user-attachments/assets/1b85f5e5-76b4-48d7-a4fb-780b6712ad3a)> 
