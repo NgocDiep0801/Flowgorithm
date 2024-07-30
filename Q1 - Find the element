@@ -1,3 +1,5 @@
+Find the element that appears most often in the array
+
 import random
 random.seed()   #Prepare random number generator
 
