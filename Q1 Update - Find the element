@@ -1,0 +1,35 @@
+Find the element that appears most often in the array - UPDATE
+
+import random
+random.seed()   #Prepare random number generator
+
+print("Find the element that appears most often in the array")
+print("Enter the number of elements of the array")
+print("Enter n")
+n = int(input())
+while n < 0:
+    print("N must be a positive number")
+    print("Enter n")
+    n = int(input())
+a = [0] * (n)
+b = [0] * (11)
+
+for i in range(0, 10 + 1, 1):
+    b[i] = 0
+print("The random elements are")
+for i in range(0, n - 1 + 1, 1):
+    a[i] = int(random.random() * 10)
+    b[a[i]] = b[a[i]] + 1
+    print(a[i])
+max = 0
+maxt = 0
+for i in range(0, n - 1 + 1, 1):
+    if max < b[a[i]]:
+        max = b[a[i]]
+for i in range(0, n - 1 + 1, 1):
+    if max == b[a[i]]:
+        maxt = a[i]
+        print("Element that repeats the most times is " + maxt)
+        print("The number of repetitions is " + max)
+        b[a[i]] = 0
+        a[i] = 0
