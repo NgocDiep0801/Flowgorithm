@@ -1,3 +1,4 @@
+**_Insert an element into the given position in the array_**
 import random
 random.seed()   #Prepare random number generator
 
