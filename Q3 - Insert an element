@@ -1,0 +1,31 @@
+Insert an element at a given position in the array
+
+import random
+random.seed()   #Prepare random number generator
+
+print("add an element at a given position in the array")
+print("Input lenght of array")
+n = int(input())
+a = [0] * (n)
+
+for i in range(0, n - 1 + 1, 1):
+    a[i] = int(random.random() * 9)
+for i in range(0, n - 1 + 1, 1):
+    print("a[" + i + "]:" + a[i])
+print("Enter the position you want to add")
+addpoint = int(input())
+print("Enter the number you want to add")
+addnumber = int(input())
+m = n + 1
+b = [0] * (m)
+
+for j in range(m - 1, addpoint + 1 - 1, -1):
+    if j == addpoint + 1:
+        b[j] = a[j - 1]
+        b[j - 1] = addnumber
+    else:
+        b[j] = a[j - 1]
+for j in range(0, addpoint - 1 + 1, 1):
+    b[j] = a[j]
+for j in range(0, m - 1 + 1, 1):
+    print("b[" + j + "]:" + b[j])
